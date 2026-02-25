@@ -157,7 +157,7 @@ dataCache:
     tag: ""
   runtimes:
     # -- PyTorch distributed training with data cache support
-    torchDistributedWithCache:
+    torchDistributed:
       # -- Enable deployment of torch-distributed-with-cache runtime
       enabled: false
 

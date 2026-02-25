@@ -302,7 +302,7 @@ var _ = ginkgo.Describe("TrainJob controller", ginkgo.Ordered, func() {
 								testingutil.MakeMLPolicyWrapper().
 									WithNumNodes(100).
 									WithMLPolicySource(*testingutil.MakeMLPolicySourceWrapper().
-										TorchPolicy(ptr.To(intstr.FromString("auto"))).
+										TorchPolicy(ptr.To(intstr.FromString("auto")), nil).
 										Obj(),
 									).
 									Obj(),
@@ -826,7 +826,7 @@ var _ = ginkgo.Describe("TrainJob controller", ginkgo.Ordered, func() {
 								testingutil.MakeMLPolicyWrapper().
 									WithNumNodes(100).
 									WithMLPolicySource(*testingutil.MakeMLPolicySourceWrapper().
-										TorchPolicy(ptr.To(intstr.FromString("auto"))).
+										TorchPolicy(ptr.To(intstr.FromString("auto")), nil).
 										Obj(),
 									).
 									Obj(),
