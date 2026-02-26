@@ -18,6 +18,73 @@ helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --v
 For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
 ### ⚙️ Miscellaneous Tasks
 
+- chore(release): Release v99.0.1 (@krishna-kg732)
+- chore: improvve makefile and release.yaml (@krishna-kg732)
+
+
+## [v99.0.1](https://github.com/kubeflow/trainer/releases/tag/v99.0.1) (2026-02-26)
+
+This is Kubeflow Trainer v99.0.1 release.
+
+```bash
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/manager?ref=v99.0.1"
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/runtimes?ref=v99.0.1"
+```
+
+You can now install controller manager with Helm charts 🚀
+
+```bash
+helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --version 99.0.1
+```
+
+For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
+### ⚙️ Miscellaneous Tasks
+
+- chore(release): Release v99.0.1 (@krishna-kg732)
+- chore: improvve makefile and release.yaml (@krishna-kg732)
+
+
+## [v99.0.0](https://github.com/kubeflow/trainer/releases/tag/v99.0.0) (2026-02-26)
+
+This is Kubeflow Trainer v99.0.0 release.
+
+```bash
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/manager?ref=v99.0.0"
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/runtimes?ref=v99.0.0"
+```
+
+You can now install controller manager with Helm charts 🚀
+
+```bash
+helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --version 99.0.0
+```
+
+For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
+### ⚙️ Miscellaneous Tasks
+
+- chore(release): Release v99.0.1 (@krishna-kg732)
+- chore: improvve makefile and release.yaml (@krishna-kg732)
+
+
+
+## [v99.0.1](https://github.com/kubeflow/trainer/releases/tag/v99.0.1) (2026-02-26)
+
+This is Kubeflow Trainer v99.0.1 release.
+
+```bash
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/manager?ref=v99.0.1"
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/runtimes?ref=v99.0.1"
+```
+
+You can now install controller manager with Helm charts 🚀
+
+```bash
+helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --version 99.0.1
+```
+
+For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
+### ⚙️ Miscellaneous Tasks
+
 - chore: improvve makefile and release.yaml (@krishna-kg732)
 
 
