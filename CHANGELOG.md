@@ -1,3 +1,82 @@
+
+
+## [v99.0.0](https://github.com/kubeflow/trainer/releases/tag/v99.0.0) (2026-02-28)
+
+This is Kubeflow Trainer v99.0.0 release.
+
+```bash
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/manager?ref=v99.0.0"
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/runtimes?ref=v99.0.0"
+```
+
+You can now install controller manager with Helm charts 🚀
+
+```bash
+helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --version 99.0.0
+```
+
+For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
+### 🚀 Features
+
+- feat(ci): Add release automation with OIDC PyPI publishing (@krishna-kg732)
+- feat(api): BREAKING CHANGE – Remove ElasticPolicy API ([#3235](https://github.com/kubeflow/trainer/pull/3235) by @andreyvelich)
+- feat: Helm test workflow ([#3228](https://github.com/kubeflow/trainer/pull/3228) by @Goku2099)
+
+### 🐛 Bug Fixes
+
+- fix: body parameter for release notes (@krishna-kg732)
+- fix: Enforce single ML policy constraint with CEL validation for Torch, MPI, and JAX ([#3225](https://github.com/kubeflow/trainer/pull/3225) by @Krishna-kg732)
+- fix(test): Fix Data Cache runtime in Helm Charts ([#3241](https://github.com/kubeflow/trainer/pull/3241) by @andreyvelich)
+- fix(test): Ignore version increment in Helm Chart lint ([#3240](https://github.com/kubeflow/trainer/pull/3240) by @andreyvelich)
+- fix: failing e2e and gpu e2e tests ([#3234](https://github.com/kubeflow/trainer/pull/3234) by @jaiakash)
+
+### ⚙️ Miscellaneous Tasks
+
+- chore: improvve makefile and release.yaml (@krishna-kg732)
+- chore: fix the github release step (@krishna-kg732)
+- chore: remove pypi publish from release.yaml (@krishna-kg732)
+- chore(deps): bump futures from 0.3.31 to 0.3.32 in /pkg/data_cache/test ([#3211](https://github.com/kubeflow/trainer/pull/3211) by @dependabot[bot])
+- chore(deps): bump aquasecurity/trivy-action from 0.33.1 to 0.34.0 in /.github/workflows ([#3222](https://github.com/kubeflow/trainer/pull/3222) by @dependabot[bot])
+
+
+## [v99.0.0](https://github.com/kubeflow/trainer/releases/tag/v99.0.0) (2026-02-28)
+
+This is Kubeflow Trainer v99.0.0 release.
+
+```bash
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/manager?ref=v99.0.0"
+kubectl apply --server-side -k "https://github.com/kubeflow/trainer.git/manifests/overlays/runtimes?ref=v99.0.0"
+```
+
+You can now install controller manager with Helm charts 🚀
+
+```bash
+helm install kubeflow-trainer oci://ghcr.io/kubeflow/charts/kubeflow-trainer --version 99.0.0
+```
+
+For more information, please see [the Kubeflow Trainer docs](https://www.kubeflow.org/docs/components/trainer/overview/)
+### 🚀 Features
+
+- feat(ci): Add release automation with OIDC PyPI publishing (@krishna-kg732)
+- feat(api): BREAKING CHANGE – Remove ElasticPolicy API ([#3235](https://github.com/kubeflow/trainer/pull/3235) by @andreyvelich)
+- feat: Helm test workflow ([#3228](https://github.com/kubeflow/trainer/pull/3228) by @Goku2099)
+
+### 🐛 Bug Fixes
+
+- fix: body parameter for release notes (@krishna-kg732)
+- fix: Enforce single ML policy constraint with CEL validation for Torch, MPI, and JAX ([#3225](https://github.com/kubeflow/trainer/pull/3225) by @Krishna-kg732)
+- fix(test): Fix Data Cache runtime in Helm Charts ([#3241](https://github.com/kubeflow/trainer/pull/3241) by @andreyvelich)
+- fix(test): Ignore version increment in Helm Chart lint ([#3240](https://github.com/kubeflow/trainer/pull/3240) by @andreyvelich)
+- fix: failing e2e and gpu e2e tests ([#3234](https://github.com/kubeflow/trainer/pull/3234) by @jaiakash)
+
+### ⚙️ Miscellaneous Tasks
+
+- chore: improvve makefile and release.yaml (@krishna-kg732)
+- chore: fix the github release step (@krishna-kg732)
+- chore: remove pypi publish from release.yaml (@krishna-kg732)
+- chore(deps): bump futures from 0.3.31 to 0.3.32 in /pkg/data_cache/test ([#3211](https://github.com/kubeflow/trainer/pull/3211) by @dependabot[bot])
+- chore(deps): bump aquasecurity/trivy-action from 0.33.1 to 0.34.0 in /.github/workflows ([#3222](https://github.com/kubeflow/trainer/pull/3222) by @dependabot[bot])
+
 # Changelog
 
 # [v2.1.0](https://github.com/kubeflow/trainer/tree/v2.1.0) (2025-11-07)
