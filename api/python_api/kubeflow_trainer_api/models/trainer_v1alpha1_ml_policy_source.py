@@ -30,7 +30,8 @@ class TrainerV1alpha1MLPolicySource(BaseModel):
     jax: Optional[Dict[str, Any]] = Field(default=None, description="jax defines the configuration for the JAX Runtime")
     mpi: Optional[TrainerV1alpha1MPIMLPolicySource] = Field(default=None, description="mpi defines the configuration for the MPI Runtime.")
     torch: Optional[Dict[str, Any]] = Field(default=None, description="torch defines the configuration for the PyTorch runtime.")
-    __properties: ClassVar[List[str]] = ["jax", "mpi", "torch"]
+    xgboost: Optional[Dict[str, Any]] = Field(default=None, description="xgboost defines the configuration for the XGBoost Runtime.")
+    __properties: ClassVar[List[str]] = ["jax", "mpi", "torch", "xgboost"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -88,7 +89,8 @@ class TrainerV1alpha1MLPolicySource(BaseModel):
         _obj = cls.model_validate({
             "jax": obj.get("jax"),
             "mpi": TrainerV1alpha1MPIMLPolicySource.from_dict(obj["mpi"]) if obj.get("mpi") is not None else None,
-            "torch": obj.get("torch")
+            "torch": obj.get("torch"),
+            "xgboost": obj.get("xgboost")
         })
         return _obj
 
